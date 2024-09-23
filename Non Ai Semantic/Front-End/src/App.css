@@ -1,0 +1,863 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.home-text{
+  font-size: 12px;
+}
+
+.background-image{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.home-btn{
+  width: 100%;
+  margin: 10px;
+  height: 60px;
+}
+
+.home-btn:hover{
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.home-container{
+  margin-top: 60px;
+}
+
+
+
+/* File Upload */
+
+
+/* .upload-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  } */
+
+  /* .upload-container h3{
+    color: #e8e4f0;
+    text-transform: uppercase;
+  } */
+  
+  /* .drag-file-area {
+    border: 2px dashed #cccccc;
+    border-radius: 10px;
+    padding: 40px;
+    margin: 20px;
+    position: relative;
+    text-align: center;
+    transition: background-color 0.2s ease;
+  } */
+  
+  /* .drag-file-area.dragover {
+    background-color: #f0f0f0;
+  } */
+  
+  /* .upload-icon {
+    font-size: 50px;
+    color: #999999;
+  } */
+  
+  /* .dynamic-message {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #333333;
+  } */
+  
+  /* .browse-files {
+    cursor: pointer;
+    color: #007bff;
+    font-weight: bold;
+  } */
+/*   
+  .default-file-input {
+    display: none;
+  } */
+  
+  .upload-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: 92%;
+  }
+  
+  .upload-button:disabled {
+    background-color: #cccccc;
+  }
+  
+  .error-message {
+    color: red;
+  }
+  
+  .extracted-text {
+    margin-top: 20px;
+    text-align: left;
+    max-height: 400px;
+    overflow-y: scroll;
+    border: 1px solid #dddddd;
+    padding: 10px;
+  }
+  
+  /* .file-info{
+    border: 1px solid;
+    width: 87%;
+    border-radius: 10px;
+    background: #007bff;
+    padding: 10px;
+    color: #fff;
+    display: flex;
+    margin: 21px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  } */
+
+  /* profile pic */
+
+  .profile-pic{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+
+
+  .file_upload_container{
+    width: 600px;
+  } 
+
+  .w-525{
+    width: 600px;
+    height: 50px;
+    background: #163366;
+    display: flex;
+    justify-content: center;
+  }
+
+  .w-525 P{
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffffb0;
+    margin-left: 10rem;
+  }
+
+
+  .w-525-bg{
+    background: #007bff;
+    width: 600px;
+    height: 50px;
+  }
+
+  .w-84{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 7px;
+    gap: 20px;
+  }
+
+  .p-5{
+    position: absolute;
+    top: 7px;
+    left: 550px;
+  }
+
+  .d-flex{
+    display: flex;
+    gap: 20px;
+  }
+
+  /* search container */
+
+  .search_container{
+    width: 100%;
+    background: #F1F6FE;
+    min-height: 86vh;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .d-flex-j-c{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 25px;
+  }
+
+  .chat-now{
+    font-size: 14px;
+    color: green;
+  }
+
+  .d-flex-justify-space-b{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .search-input{
+    width: 870px;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px;
+    box-shadow: 0 10px 10px rgb(0 0 0 / 0.2);
+  }
+
+  .search-input img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+
+  .search-input input{
+    padding: 20px;
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-left: 20px;
+  }
+
+  .file1{
+    width: 300px;
+    height: 100px;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+    box-shadow: 0 10px 10px rgb(0 0 0 / 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0px 12px 0px 0px
+  }
+
+  .file1-w-280 {
+    width: 250px;
+    height: 30px;
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 12px 0px;
+    box-shadow: 0 10px 10px rgb(0 0 0 / 0.2);
+    cursor: pointer;
+
+}
+
+.pdf-image-h{
+  width: 17px;
+  margin: 4px;
+}
+
+.blue-div-h {
+  width: 29px;
+  height: 30px;
+  background: #007bff;
+  border-radius: 10px 26px 55px 10px;
+}
+
+  .blue-div{
+    width: 80px;
+    height: 100px;
+    background: #007bff;
+    border-radius: 10px 26px 55px 10px;
+  }
+
+  .pdf-image{
+    width: 50px;
+    margin: 12px;
+  }
+
+  .text-s-field{
+    display: flex;
+    align-items: end;
+  }
+
+
+  
+  .file1.active {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #007bff;
+    color: #fff;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0px 10px;
+  }
+  
+  .file1.active p {
+    color: white;
+  }
+
+  .field-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 30px;
+  }
+
+  .d-flex-date-delt{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 35px;
+  }
+
+  hr.hr-tag{
+    border: 1px solid #e8e4f0;
+    margin-bottom: 20px;
+}
+  
+
+/* Chat History  */
+
+.chat-history{
+    cursor: pointer;    
+}
+
+
+.pdf-chat-history{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 20px;
+  width: 900px;
+  gap: 20px;
+}
+
+.chat-question{
+  background: #fff;
+  padding: 20px;
+  color: #000;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.chat-answer{
+  background: #007bff;
+    padding: 20px;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 60px;
+}
+
+/* History Popup */
+
+.file-name{
+  background: #000;
+  width: 300px;
+  padding: 20px 20px 10px 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: absolute;
+  left: 0;
+  min-height: 86%;
+  max-height: 100%;
+  height: auto;
+}
+
+.chat-history-file-name{
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.chat-history-file-name:hover{
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+/* Closs Popup */
+
+.closs-popup-div{
+  display: flex;
+  justify-content: end;
+  margin-bottom: 20px;
+}
+
+.close-popup-div{
+  margin-bottom: 20px;
+}
+
+
+/* Hover New Chat */
+
+.new-chat-hover{
+  position: absolute;
+  width: 100px;
+  left: 65px;
+  top: 75px;
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.new-chat-hover::before{
+  content: "";
+  position: absolute;
+  left: 31%;
+  top: -31%;
+  transform: translate(50%);
+  border: 15px solid;
+  border-color: #000 #0000 #0000 #0000;
+  transform: rotate(44deg);
+}
+
+.hover-new:hover .new-chat-hover{
+  visibility: visible;
+  opacity: 1;
+}
+
+.hover-upload-document img,
+.hover-new img,
+.chat-history-hover img{
+  cursor: pointer;
+}
+
+.upload-document{
+  position: absolute;
+  width: 150px;
+  left: -65px;
+  top: 50px;
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.upload-document::before{
+  content: "";
+  position: absolute;
+  left: 40%;
+  bottom: 95%;
+  transform: translate(-50%);
+  border: 15px solid;
+  border-color: #000 #0000 #0000 #0000;
+  transform: rotate(180deg);
+}
+
+.hover-upload-document:hover .upload-document{
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.chat-history-p{
+  position: absolute;
+  width: 100px;
+  left: 5px;
+  top: 95px;
+  background: #000;
+  color: #fff;
+  padding: 7px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.chat-history-p::before{
+  content: "";
+  position: absolute;
+  left: 40%;
+  bottom: 95%;
+  transform: translate(-50%);
+  border: 15px solid;
+  border-color: #000 #0000 #0000 #0000;
+  transform: rotate(180deg);
+}
+
+
+.chat-history-hover:hover .chat-history-p{
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.mobile-p-5{
+  display: none;
+}
+
+.mobile-menu{
+  display: none;
+}
+
+.mobile-d-flex-j-c{
+  display: none;
+}
+
+.close-popup-div-m{
+  display: none;
+}
+
+.m-document-upload{
+  display: none;
+}
+
+.d-document-upload{
+  display: block;
+ }
+
+ .nav-file{
+  display: none;
+ }
+
+
+
+
+/*  Mobile Vesrion */
+
+
+
+@media (max-width: 767px) {
+  /* General */
+  .background-image {
+    height: 40%;
+  }
+
+
+  .close-popup-div-m{
+    display: block;
+  }
+  
+ .d-document-upload{
+  display: none;
+ }
+
+ .m-document-upload{
+  display: block;
+}
+
+.nav-file{
+  display: block;
+}
+
+  .d-flex-j-c{
+    display: none;
+
+  }
+
+  .p-5{
+ display: none;
+}
+
+.message-icon{
+  display: none;
+}
+
+.mobile-menu{
+  display: block;
+}
+
+.mobile-p-5{
+  display: block;
+}
+
+.w-84{
+  display: none;
+}
+
+
+  
+
+  .container {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .file-upload-div {
+    width: 90%;
+    height: auto;
+    margin: 20px;
+  }
+
+  /* File Upload */
+  /* .upload-container {
+    max-width: 90%;
+    margin: 0 auto;
+  } */
+
+  /* .drag-file-area {
+    padding: 20px;
+    margin: 10px;
+  } */
+
+  /* .upload-icon {
+    font-size: 40px;
+  } */
+
+  /* .dynamic-message {
+    font-size: 16px;
+  } */
+
+  .upload-button {
+    width: 100%;
+  }
+
+  /* .file-info {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    font-size: 14px;
+  } */
+
+  .file_upload_container {
+    width: 100%;
+  }
+
+  .w-525 {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .w-525 p {
+    font-size: 20px;
+    margin-left: 0px;
+  }
+
+  .w-525-bg {
+    width: 100%;
+    height: 35px;
+  }
+
+  .w-84 {
+    position: relative;
+    top: 0;
+    gap: 10px;
+  }
+
+  .d-flex {
+    gap: 10px;
+    display: block;
+  }
+
+  .mobile-d-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+ 
+
+  .search-input {
+    width: 90%;
+    margin: 10px 0;
+    padding: 0px 7px;
+  }
+
+  .search-input input {
+    margin-left: 10px;
+  }
+
+  /* File List */
+  .file1, .file1-w-280 {
+    width: 100%;
+    margin: 10px 0;
+    
+  }
+
+  .file1{
+    height: 60px;
+    padding: 0px;
+    gap: 0px;
+  }
+
+  .file1.active p {
+    color: white;
+    font-size: 12px;
+  }
+
+  /* Chat History */
+  .pdf-chat-history {
+    width: 100%;
+    grid-template-columns: 0.7fr;
+    justify-content: center;
+}
+
+.s-align{
+  display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+  .chat-question, .chat-answer {
+    margin-top: 10px;
+    padding: 15px;
+  }
+
+  /* History Popup */
+  .file-name {
+    width: 60%;
+    position: absolute;
+    left: 0;
+    top: 75px;
+  }
+
+  /* Popup Hover */
+  .new-chat-hover, .upload-document, .chat-history-p {
+    width: 200px;
+  }
+
+  /* search Input */
+  .d-flex-justify-space-b{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .upload-document {
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    right: 16px;
+}
+
+.upload-document::before{
+  content: "";
+  position: absolute;
+  left: 75%;
+  bottom: 95%;
+  transform: translate(-50%);
+  border: 15px solid;
+  border-color: #000 #0000 #0000 #0000;
+  transform: rotate(180deg);
+}
+
+.mobile-new-chat-btn{
+  display: flex;
+        width: 195px;
+        padding: 14px;
+        justify-content: start;
+        align-items: center;
+        gap: 17px;
+        border-radius: 5px;
+        border: none;
+        background: #fff;
+        color: #163366;
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 20px;
+}
+
+.mobile-search-pdf-name{
+  height: 100vh;
+  width: 100%;
+  background: #f1f6fe;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search_container{
+  display: block;
+  height: 0;
+
+}
+
+.mobile-d-flex-j-c{
+  display:block;
+}
+
+.Document-upload{
+  background: #000;
+    position: absolute;
+    width: 60%;
+    left: 0;
+    top: 75px;
+    padding: 7px;
+    height: 100%;
+  
+}
+
+
+.file1.active {
+  height: 60px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #007bff;
+  color: #fff;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0px 10px;
+}
+
+.blue-div{
+  width: 45px;
+  height: 60px;
+  background: #007bff;
+  border-radius: 10px 26px 55px 10px;
+}
+
+.pdf-image {
+  width: 30px;
+  margin: 5px;
+}
+
+.d-flex-date-delt{
+  gap: 7px;
+}
+
+
+
+}
+
+
